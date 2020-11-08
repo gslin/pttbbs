@@ -1975,10 +1975,6 @@ write_file(const char *fpath, int saveheader, char mytitle[STRLEN],
 	mvouts(6, 0, warn_prompt);
     getdata(2, 0, "確定要儲存檔案嗎？ ", ans, 2, LCECHO);
 
-    // avoid lots pots
-    if (ans[0] != 'a')
-	sleep(1);
-
     switch (ans[0]) {
     case 'a':
 	outs("文章" ANSI_COLOR(1) " 沒有 " ANSI_RESET "存入");
