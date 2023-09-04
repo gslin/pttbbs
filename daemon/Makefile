@@ -1,3 +1,3 @@
-SUBDIR:=	boardd fromd logind regmaild
+SUBDIR:=	boardd fromd logind
 
 .include <bsd.subdir.mk>
