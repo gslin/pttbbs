@@ -368,6 +368,7 @@ receive_article()
 	strncpy(userid, lesssym, sizeof userid);
     }
     strncat(userid, ".", sizeof(userid) - 1);
+    userid[sizeof(userid) - 1] = '\0';
 
     {
 	struct tm       tmbuf;
