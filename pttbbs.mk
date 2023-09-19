@@ -8,8 +8,8 @@ OSTYPE!=	uname
 
 # Detect best compiler
 #
-CC:=		gcc-9
-CXX:=		g++-9
+CC:=		gcc
+CXX:=		g++
 
 CLANG!=		sh -c 'type clang >/dev/null 2>&1 && echo 1 || echo 0'
 CCACHE!=	sh -c 'type ccache >/dev/null 2>&1 && echo 1 || echo 0'
