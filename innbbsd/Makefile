@@ -18,7 +18,7 @@ inn_LDFLAGS=
 CFLAGS+=	-DVERSION=\"${VERSION}\"		\
 		-DADMINUSER=\"${ADMINUSER}\"		\
 		-DMapleBBS	-DDBZDEBUG	-I.	\
-		${inn_CFLAGS} -DHMM_USE_ANTI_SPAM
+		${inn_CFLAGS} -DHMM_USE_ANTI_SPAM -fcommon
 
 LDFLAGS+=	${inn_LDFLAGS}
 
