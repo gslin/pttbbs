@@ -205,9 +205,9 @@ join(lineptr, pat, num)
 	return joinbuf;
     }
     for (i = 1; i < num; i++) {
-	strcat(joinbuf, pat);
+	strncat(joinbuf, pat, sizeof(joinbuf) - strlen(joinbuf) - 1);
 	if (lineptr[i] != NULL)
-	    strcat(joinbuf, lineptr[i]);
+	    strncat(joinbuf, lineptr[i], sizeof(joinbuf) - strlen(joinbuf) - 1);
 	else
 	    break;
     }
