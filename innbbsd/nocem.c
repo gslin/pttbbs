@@ -598,6 +598,9 @@ initial_nocem()
 int
 receive_nocem(void)
 {
+  // Disable NoCeM.
+  return 0;
+
   int rel;
 
   if (ncmdebug)
