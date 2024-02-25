@@ -1819,6 +1819,14 @@ choose_board(int newflag)
 	case 'j':
 	    if (++num < brdnum)
 		break;
+	case '`':
+	    for (int i = num + 1; i < brdnum; i++) {
+		if (nbrd[i]->myattr & NBRD_UNREAD) {
+		    num = i;
+		    break;
+		}
+	    }
+	    break;
 	case '0':
 	case KEY_HOME:
 	    num = 0;
