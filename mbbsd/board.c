@@ -1821,7 +1821,7 @@ choose_board(int newflag)
 		break;
 	case '`':
 	    for (int i = num + 1; i < brdnum; i++) {
-		if (nbrd[i]->myattr & NBRD_UNREAD) {
+		if ((&nbrd[i])->myattr & NBRD_UNREAD) {
 		    num = i;
 		    break;
 		}
