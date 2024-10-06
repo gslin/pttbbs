@@ -192,7 +192,7 @@
 #define FTSZ_DEFAULT_ROW (24)
 #define FTSZ_DEFAULT_COL (80)
 #define FTSZ_MIN_ROW     (24)
-#define FTSZ_MAX_ROW     (100)
+#define FTSZ_MAX_ROW     (128)
 #define FTSZ_MIN_COL     (80)
 #define FTSZ_MAX_COL     (320)
 
