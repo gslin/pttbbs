@@ -52,8 +52,8 @@ void term_resize(int w, int h)
 
 
     /* make sure reasonable size */
-    int h_crop = MAX(24, MIN(100, h));
-    int w_crop = MAX(80, MIN(200, w));
+    int h_crop = MAX(24, MIN(128, h));
+    int w_crop = MAX(80, MIN(256, w));
 
     // invoke terminal system resize
     resizeterm_within(h_crop, w_crop, h, w);

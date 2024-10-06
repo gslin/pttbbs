@@ -94,8 +94,8 @@ resizeterm(int w, int h)
     screenline_t   *new_picture;
 
     /* make sure reasonable size */
-    h = MAX(24, MIN(100, h));
-    w = MAX(80, MIN(200, w));
+    h = MAX(24, MIN(128, h));
+    w = MAX(80, MIN(256, w));
 
     if (h > t_lines && big_picture) {
 	new_picture = (screenline_t *)
